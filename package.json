@@ -27,7 +27,6 @@
     "directories": {
       "output": "dist"
     },
-    "forceCodeSigning": true,
     "mac": {
       "hardenedRuntime": true,
       "entitlements": "build/entitlements.mac.plist",
