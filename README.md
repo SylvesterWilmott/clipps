@@ -7,7 +7,7 @@ A simple clipboard history utility for Mac. Built with Electron.
 ## Installation
 
 1. Clone the repo
-2. `cd Clipps`
+2. `cd clipps`
 3. `yarn install`
 4. `yarn start`
 
