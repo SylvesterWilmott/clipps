@@ -1,0 +1,46 @@
+{
+  "name": "clipps",
+  "productName": "Clipps",
+  "version": "1.0.0",
+  "description": "A simple clipboard history utility.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Sylvester Wilmott",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "sanitize-html": "^2.9.0",
+    "npm-check-updates": "^16.7.4"
+  },
+  "build": {
+    "appId": "com.sylvesterwilmott.clipps",
+    "productName": "Clipps",
+    "icon": "src/images/ic_app.icns",
+    "directories": {
+      "output": "dist"
+    },
+    "forceCodeSigning": true,
+    "mac": {
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "gatekeeperAssess": false,
+      "target": [
+        {
+          "target": "default",
+          "arch": "universal"
+        }
+      ],
+      "category": "public.app-category.utilities",
+      "artifactName": "${productName}-${version}-${os}.${ext}"
+    }
+  }
+}
