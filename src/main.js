@@ -284,21 +284,27 @@ function registerListeners() {
     storage.set("clips", updatedClips);
   });
 
-  storage.onDidChange("pref_open_at_login", (status) => {
-    setLoginSettings(status);
+  storage.onDidAnyChange((result) => {
+    for (const key in defaults) {
+      userPrefs[key] = result[key];
+    }
+  });
+
+  storage.onDidChange("pins", () => {
+    buildMenu();
+  });
+
+  storage.onDidChange("clips", () => {
+    pruneClips(userPrefs.pref_max_clips);
+    buildMenu();
   });
 
   storage.onDidChange("pref_max_clips", (n) => {
     pruneClips(n);
   });
 
-  storage.onDidAnyChange((result) => {
-    for (const key in defaults) {
-      userPrefs[key] = result[key];
-    }
-
-    pruneClips(userPrefs.pref_max_clips);
-    buildMenu();
+  storage.onDidChange("pref_open_at_login", (status) => {
+    setLoginSettings(status);
   });
 }
 
