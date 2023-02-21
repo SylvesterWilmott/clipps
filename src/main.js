@@ -4,7 +4,7 @@ const { app, Menu, Tray, nativeImage } = require('electron')
 
 const path = require('path')
 const Store = require('electron-store')
-const watchClipboard = require(path.join(__dirname, 'watchClipboard.js'))
+const watchClipboard = require(path.join(__dirname, 'watch-clipboard.js'))
 const strings = require(path.join(__dirname, 'strings.js'))
 
 const defaults = {
