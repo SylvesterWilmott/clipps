@@ -17,8 +17,7 @@
   },
   "dependencies": {
     "electron-store": "^8.1.0",
-    "sanitize-html": "^2.9.0",
-    "npm-check-updates": "^16.7.4"
+    "sanitize-html": "^2.9.0"
   },
   "build": {
     "appId": "com.sylvesterwilmott.clipps",
