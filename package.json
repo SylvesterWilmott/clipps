@@ -68,6 +68,27 @@
       "publish": [
         "github"
       ]
+    },
+    "dmg": {
+      "background": "build/background.png",
+      "icon": "build/icon.icns",
+      "window": {
+        "width": 540,
+        "height": 380
+      },
+      "iconSize": 96,
+      "contents": [
+        {
+          "x": 162,
+          "y": 190
+        },
+        {
+          "x": 330,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
     }
   }
 }
