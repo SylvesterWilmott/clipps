@@ -70,7 +70,7 @@
       ]
     },
     "dmg": {
-      "background": "build/background.png",
+      "backgroundColor": "#f0f0f0",
       "icon": "build/icon.icns",
       "title": "${productName} ${version}",
       "window": {
