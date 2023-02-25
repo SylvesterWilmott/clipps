@@ -37,8 +37,6 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "SylvesterWilmott",
-        "repo": "clipps",
         "token": "$(grep GH_TOKEN .env | cut -d '=' -f2)"
       }
     ],
