@@ -72,6 +72,7 @@
     "dmg": {
       "background": "build/background.png",
       "icon": "build/icon.icns",
+      "title": "${productName} ${version}",
       "window": {
         "width": 540,
         "height": 380
@@ -79,12 +80,12 @@
       "iconSize": 96,
       "contents": [
         {
-          "x": 162,
-          "y": 190
+          "x": 174,
+          "y": 159
         },
         {
-          "x": 330,
-          "y": 190,
+          "x": 366,
+          "y": 159,
           "type": "link",
           "path": "/Applications"
         }
